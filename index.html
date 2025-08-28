@@ -34,12 +34,10 @@
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
-  }
-  .logo-placeholder img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .section-divider {
     text-align: center;
@@ -48,8 +46,10 @@
     background-color: #e0e0e0;
     border-top: 2px dashed #999;
     border-bottom: 2px dashed #999;
+    margin-bottom: 20px;
   }
-  .section-divider p {
+  .section-divider .divider-text {
+    display: block;
     font-size: 1em;
     color: #555;
     margin-top: 10px;
@@ -96,7 +96,7 @@
 <!-- Cover Page -->
 <div class="cover">
   <div class="logo-placeholder">
-    <img src="logo.jpg" alt="Days Gone By Logo">
+    <img src="logo.jpg" alt="Days Gone By Logo" style="width: 150px; height: 150px; object-fit: contain; border-radius: 50%;">
   </div>
   <h1>Palestine Before the Nakba</h1>
   <h2>Rare Photographs from 1900–1948</h2>
@@ -111,13 +111,12 @@
 <!-- Section Divider: Landscapes / Cities -->
 <div class="section-divider">
   Landscapes & Cities
-  <p>Explore the diverse cities and natural vistas of Palestine before 1948, capturing the essence of urban life and scenic surroundings.</p>
+  <span class="divider-text">Explore the diverse cities and natural vistas of Palestine before 1948, capturing the essence of urban life and scenic surroundings.</span>
 </div>
 <div class="section">
-  <!-- Placeholder Photos -->
   <div class="photo">
     <img src="placeholder1.JPG" alt="Marketplace in Jaffa, circa 1900">
-    <div class="caption">The bustling marketplace in Jaffa, circa 1900, viewed from Clock Tower Square. In the background, Mahmoudiya Mosque stands as a historical landmark, highlighting the city’s vibrant commercial and cultural life.(Library of Congress)</div>
+    <div class="caption">The bustling marketplace in Jaffa, circa 1900, viewed from Clock Tower Square. In the background, Mahmoudiya Mosque stands as a historical landmark, highlighting the city’s vibrant commercial and cultural life. (Library of Congress)</div>
   </div>
   <div class="photo">
     <img src="placeholder2.PNG" alt="Haifa, 1940">
@@ -133,14 +132,14 @@
   </div>
   <div class="photo">
     <img src="placeholder5.PNG" alt="Saffuriya, Nazareth & Lower Galilee">
-    <div class="caption">Saffuriya, perched on a hill near Nazareth and home to over 4,000 Palestinians, with historical significance dating back to Roman and Crusader periods. The village exemplifies the region’s strategic and cultural importance.(Library of Congress)</div>
+    <div class="caption">Saffuriya, perched on a hill near Nazareth and home to over 4,000 Palestinians, with historical significance dating back to Roman and Crusader periods. The village exemplifies the region’s strategic and cultural importance. (Library of Congress)</div>
   </div>
 </div>
 
 <!-- Section Divider: Daily Life -->
 <div class="section-divider">
   Daily Life
-  <p>A glimpse into the routines, traditions, and social customs of Palestinian communities during the early 20th century.</p>
+  <span class="divider-text">A glimpse into the everyday lives of Palestinians, highlighting traditions, family, work, and communal celebrations prior to 1948.</span>
 </div>
 <div class="section">
   <div class="photo">
@@ -168,7 +167,7 @@
 <!-- Section Divider: Cultural / Religious -->
 <div class="section-divider">
   Cultural & Religious
-  <p>Discover the rich cultural practices, attire, religious landmarks, and ceremonies that shaped Palestinian identity.</p>
+  <span class="divider-text">Images showcasing Palestinian customs, clothing, religious life, and cultural traditions before 1948.</span>
 </div>
 <div class="section">
   <div class="photo">
@@ -196,7 +195,7 @@
 <!-- Section Divider: Political / Historical Moments -->
 <div class="section-divider">
   Political & Historical Moments
-  <p>Witness pivotal events, resistance movements, and historical milestones that influenced Palestine prior to 1948.</p>
+  <span class="divider-text">Documenting pivotal events, leadership, and political movements that shaped Palestine before 1948.</span>
 </div>
 <div class="section">
   <div class="photo">
@@ -217,7 +216,7 @@
   </div>
   <div class="photo">
     <img src="placeholder20.PNG" alt="Expulsion of Palestinians, 1948">
-    <div class="caption">Over 750,000 Palestinians were forcibly expelled from their homes in 1948 during the Nakba, representing a pivotal moment of displacement and upheaval in Palestinian history.(AFP)</div>
+    <div class="caption">Over 750,000 Palestinians were forcibly expelled from their homes in 1948 during the Nakba, representing a pivotal moment of displacement and upheaval in Palestinian history. (AFP)</div>
   </div>
 </div>
 
