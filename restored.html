@@ -1,228 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Days Gone By – Premium Edition</title>
-  <style>
-    body {
-      font-family: "Georgia", serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fdfbf7;
-      color: #2d2d2d;
-      line-height: 1.6;
-    }
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #e6dccf;
-      border-bottom: 3px solid #b8a27a;
-    }
-    header img {
-      width: 120px;
-      height: auto;
-      margin-bottom: 20px;
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin: 0;
-      color: #5a4632;
-    }
-    header p {
-      font-size: 1.2em;
-      color: #6a5842;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .divider {
-      text-align: center;
-      margin: 60px 0 40px 0;
-    }
-    .divider h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
-      color: #4a3724;
-      border-bottom: 2px solid #b8a27a;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
-    .divider p {
-      font-size: 1em;
-      color: #7a6a56;
-      margin-top: 5px;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border: 3px solid #b8a27a;
-      background-color: #fffaf3;
-    }
-    .caption {
-      font-size: 0.9em;
-      margin-top: 8px;
-      color: #4a3b2a;
-      text-align: center;
-    }
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #e6dccf;
-      border-top: 3px solid #b8a27a;
-    }
-    footer h2 {
-      font-size: 1.8em;
-      margin-bottom: 10px;
-      color: #5a4632;
-    }
-    footer p {
-      font-size: 1em;
-      color: #6a5842;
-    }
-    footer .brand {
-      margin-top: 20px;
-      font-weight: bold;
-      font-size: 1.2em;
-      color: #4a3724;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palestine Before the Nakba - Premium Edition</title>
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #fdf5e6; /* warm parchment */
+    color: #4b3b2a; /* dark brown text for vintage feel */
+    margin: 0;
+    padding: 0;
+  }
+  .cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #fff8e1; /* lighter parchment */
+    padding: 50px;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.1);
+  }
+  .cover h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #5c432d;
+  }
+  .cover h2 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    color: #5c432d;
+  }
+  .logo-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #d1c4a5;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #7d6b5f;
+  }
+  .section-divider {
+    text-align: center;
+    font-size: 2em;
+    padding: 50px 0;
+    background-color: #f4ecd8;
+    border-top: 2px solid #c59f71;
+    border-bottom: 2px solid #c59f71;
+    color: #7d5a2e;
+  }
+  .diverText {
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    color: #5c432d;
+  }
+  .section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .photo {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .photo img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #7d5a2e;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .caption {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #5c432d;
+  }
+  .intro, .closing {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .intro p {
+    line-height: 1.6em;
+  }
+  .closing {
+    font-style: italic;
+  }
+  .back-matter {
+    padding: 20px;
+    background-color: #f4ecd8;
+    font-size: 0.85em;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    color: #5c432d;
+  }
+</style>
 </head>
 <body>
 
-<header>
-  <img src="logo.png" alt="Days Gone By Logo">
-  <h1>Days Gone By – Premium Edition</h1>
-  <p>Rare colorized photographs of Palestine from the early 1900s through the mid-20th century.</p>
-</header>
+<!-- Cover Page -->
+<div class="cover">
+  <div class="logo-placeholder">
+    <img src="logo.jpg" alt="Days Gone By Logo" style="width: 150px; height: 150px; object-fit: contain; border-radius: 50%;">
+  </div>
+  <h1>Palestine Before the Nakba</h1>
+  <h2>Rare Colorized Photographs from 1900–1948</h2>
+</div>
 
-<section>
-  <div class="divider">
-    <h2>Landscapes & Cities</h2>
-    <p>Scenes of Palestine’s towns, villages, and natural beauty captured in rare photographs.</p>
-  </div>
-  <div class="gallery">
-    <div>
-      <img src="1.color.jpg" alt="Landscape 1">
-      <p class="caption">Caption for Landscape 1</p>
-    </div>
-    <div>
-      <img src="2.color.jpg" alt="Landscape 2">
-      <p class="caption">Caption for Landscape 2</p>
-    </div>
-    <div>
-      <img src="3.color.jpg" alt="Landscape 3">
-      <p class="caption">Caption for Landscape 3</p>
-    </div>
-    <div>
-      <img src="4.color.jpg" alt="Landscape 4">
-      <p class="caption">Caption for Landscape 4</p>
-    </div>
-    <div>
-      <img src="5.color.jpg" alt="Landscape 5">
-      <p class="caption">Caption for Landscape 5</p>
-    </div>
-  </div>
-</section>
+<!-- Introduction -->
+<div class="intro">
+  <h2>Introduction</h2>
+  <p>Welcome to the Premium Edition of this curated collection, bringing Palestine’s history to life in color. Each image has been restored to provide an immersive view of landscapes, daily life, cultural practices, and political moments before 1948. This edition offers a richer, more engaging experience for collectors, historians, and enthusiasts alike. Explore, learn, and appreciate Palestine’s heritage in vivid detail.</p>
+</div>
 
-<section>
-  <div class="divider">
-    <h2>Daily Life</h2>
-    <p>Everyday moments, from marketplaces to family gatherings, showing Palestinian life.</p>
+<!-- Section Divider: Landscapes / Cities -->
+<div class="section-divider">Landscapes & Cities</div>
+<p class="diverText">Explore the diverse cities and natural vistas of Palestine before 1948, capturing the essence of urban life and scenic surroundings.</p>
+<div class="section">
+  <div class="photo">
+    <img src="1.color.jpg" alt="Marketplace in Jaffa, circa 1900">
+    <div class="caption"> The bustling marketplace in Jaffa, circa 1900, viewed from Clock Tower Square. In the background, Mahmoudiya Mosque stands as a historical landmark, highlighting the city’s vibrant commercial and cultural life.(Library of Congress)</div>
   </div>
-  <div class="gallery">
-    <div>
-      <img src="6.color.jpg" alt="Daily Life 1">
-      <p class="caption">Caption for Daily Life 1</p>
-    </div>
-    <div>
-      <img src="7.color.jpg" alt="Daily Life 2">
-      <p class="caption">Caption for Daily Life 2</p>
-    </div>
-    <div>
-      <img src="8.color.jpg" alt="Daily Life 3">
-      <p class="caption">Caption for Daily Life 3</p>
-    </div>
-    <div>
-      <img src="9.color.jpg" alt="Daily Life 4">
-      <p class="caption">Caption for Daily Life 4</p>
-    </div>
-    <div>
-      <img src="10.color.jpg" alt="Daily Life 5">
-      <p class="caption">Caption for Daily Life 5</p>
-    </div>
+  <div class="photo">
+    <img src="2.color.jpg" alt="Haifa, 1940">
+    <div class="caption"> Panoramic view of Haifa and its port in 1940, capturing the city’s landscape, harbor activity, and urban development during the British Mandate period. </div>
   </div>
-</section>
+  <div class="photo">
+    <img src="3.color.jpg" alt="Palestinian street vendor, Jerusalem, 1920s">
+    <div class="caption"> A street vendor in Jerusalem during the 1920s selling freshly baked pita bread, showcasing everyday commerce and the lively atmosphere of the Old City. (Frank Scholten)</div>
+  </div>
+  <div class="photo">
+    <img src="4.color.jpg" alt="Gaza, 1930s">
+    <div class="caption"> A view of Gaza in the 1930s, reflecting the city’s coastal architecture, local life, and urban landscape before major mid-century changes. Source: palestineremembered.com</div>
+  </div>
+  <div class="photo">
+    <img src="5.color.jpg" alt="Saffuriya, Nazareth & Lower Galilee">
+    <div class="caption"> Saffuriya, perched on a hill near Nazareth and home to over 4,000 Palestinians, with historical significance dating back to Roman and Crusader periods. The village exemplifies the region’s strategic and cultural importance.(Library of Congress)</div>
+  </div>
+</div>
 
-<section>
-  <div class="divider">
-    <h2>Cultural & Religious</h2>
-    <p>Traditions, faith, and community life preserved through rare photographs.</p>
+<!-- Section Divider: Daily Life -->
+<div class="section-divider">Daily Life</div>
+<p class="diverText">A glimpse into the routines, traditions, and social customs of Palestinian communities during the early 20th century.</p>
+<div class="section">
+  <div class="photo">
+    <img src="6.color.jpg" alt="Olive harvest, West Bank, 1922">
+    <div class="caption"> In 1922, Palestinian farmers in the West Bank carefully picked olives, continuing a centuries-old tradition. The harvest was both an economic activity and a cultural celebration, bringing together families and communities. </div>
   </div>
-  <div class="gallery">
-    <div>
-      <img src="11.color.jpg" alt="Cultural 1">
-      <p class="caption">Caption for Cultural 1</p>
-    </div>
-    <div>
-      <img src="12.color.jpg" alt="Cultural 2">
-      <p class="caption">Caption for Cultural 2</p>
-    </div>
-    <div>
-      <img src="13.color.jpg" alt="Cultural 3">
-      <p class="caption">Caption for Cultural 3</p>
-    </div>
-    <div>
-      <img src="14.color.jpg" alt="Cultural 4">
-      <p class="caption">Caption for Cultural 4</p>
-    </div>
-    <div>
-      <img src="15.color.jpg" alt="Cultural 5">
-      <p class="caption">Caption for Cultural 5</p>
-    </div>
+  <div class="photo">
+    <img src="7.color.jpg" alt="Family group, Bethlehem, ca. 1930">
+    <div class="caption"> A family group from Bethlehem, photographed by Khalil Raad around 1930, showing familial bonds, traditional clothing, and daily life in early 20th-century Palestine. </div>
   </div>
-</section>
+  <div class="photo">
+    <img src="8.color.jpg" alt="Couple marriage photo, Ain Karem, 1936">
+    <div class="caption"> A newlywed couple in Ain Karem, 1936, captured on their wedding day, showcasing traditional Palestinian attire and customs during matrimonial celebrations. </div>
+  </div>
+  <div class="photo">
+    <img src="9.color.jpg" alt="School photo, Hebron, 1930">
+    <div class="caption"> Schoolchildren in Hebron, 1930, pictured in their classroom, representing the educational environment and social structures of Palestinian towns during this period. </div>
+  </div>
+  <div class="photo">
+    <img src="10.color.jpg" alt="Women grinding at the mill, 1900">
+    <div class="caption"> Women grinding grain at a local mill in Palestine, circa 1900, reflecting traditional food preparation techniques and daily labor practices in rural communities. </div>
+  </div>
+</div>
 
-<section>
-  <div class="divider">
-    <h2>Political & Historical</h2>
-    <p>Major events and struggles that shaped Palestine’s modern history.</p>
+<!-- Section Divider: Cultural / Religious -->
+<div class="section-divider">Cultural & Religious</div>
+<p class="diverText">Discover the rich cultural practices, attire, religious landmarks, and ceremonies that shaped Palestinian identity.</p>
+<div class="section">
+  <div class="photo">
+    <img src="11.color.jpg" alt="Old City of Jerusalem, Dome of the Rock, 1920s">
+    <div class="caption"> A panoramic view of Jerusalem’s Old City in the 1920s, highlighting the Dome of the Rock and Masjid Al-Aqsa, central symbols of cultural and religious heritage. </div>
   </div>
-  <div class="gallery">
-    <div>
-      <img src="16.color.jpg" alt="Political 1">
-      <p class="caption">Caption for Political 1</p>
-    </div>
-    <div>
-      <img src="17.color.jpg" alt="Political 2">
-      <p class="caption">Caption for Political 2</p>
-    </div>
-    <div>
-      <img src="18.color.jpg" alt="Political 3">
-      <p class="caption">Caption for Political 3</p>
-    </div>
-    <div>
-      <img src="19.color.jpg" alt="Political 4">
-      <p class="caption">Caption for Political 4</p>
-    </div>
-    <div>
-      <img src="20.color.jpg" alt="Political 5">
-      <p class="caption">Caption for Political 5</p>
-    </div>
+  <div class="photo">
+    <img src="12.color.jpg" alt="Dome of the Rock, 1920s–1930s">
+    <div class="caption"> Photographed by Yousef Albina, this image captures the Dome of the Rock between the 1920s and 1930s, showcasing its enduring significance in Jerusalem’s religious and urban landscape. </div>
   </div>
-</section>
+  <div class="photo">
+    <img src="13.color.jpg" alt="Woman in traditional dress, Ramallah, 1920">
+    <div class="caption"> A young woman from Ramallah in 1920, wearing traditional Arabic attire that reflects the region’s cultural identity and fashion of the era. </div>
+  </div>
+  <div class="photo">
+    <img src="14.color.jpg" alt="Farmers dancing Dabke, Negev, 1933">
+    <div class="caption"> Bedouin farmers performing the traditional Dabke dance during a wedding in the Negev, 1933, celebrating community, heritage, and festive customs. </div>
+  </div>
+  <div class="photo">
+    <img src="15.color.jpg" alt="Woman weaving basket, 1910–1914">
+    <div class="caption"> A Palestinian woman weaving a basket between 1910 and 1914, captured by National Geographic, illustrating daily craftsmanship, resourcefulness, and cultural traditions. </div>
+  </div>
+</div>
 
-<footer>
-  <h2>The End of This Archive</h2>
-  <p>If you found this archive valuable, follow and share it to keep history alive.</p>
-  <div class="brand">– Days Gone By</div>
-</footer>
+<!-- Section Divider: Political / Historical Moments -->
+<div class="section-divider">Political & Historical Moments</div>
+<p class="diverText">Witness pivotal events, resistance movements, and historical milestones that influenced Palestine prior to 1948.</p>
+<div class="section">
+  <div class="photo">
+    <img src="16.color.jpg" alt="Troops near Haifa, 1936">
+    <div class="caption"> Troops stationed near Haifa in 1936 performing railway protection duties during a period of political unrest, reflecting the tensions and strategic importance of infrastructure in Palestine. </div>
+  </div>
+  <div class="photo">
+    <img src="17.color.jpg" alt="Palestinians vote for general strike, 1936">
+    <div class="caption"> Palestinian residents voting to support a general strike proposed by the Arab Higher Committee in 1936, calling for an end to Jewish immigration and land dispossession, and demonstrating political mobilization against colonial policies. </div>
+  </div>
+  <div class="photo">
+    <img src="18.color.jpg" alt="Palestinian insurgents, 1936">
+    <div class="caption"> Insurgents participating in the 1936 revolt against British Mandate authorities and growing Zionist settlement, highlighting the resistance and struggle for Palestinian autonomy. </div>
+  </div>
+  <div class="photo">
+    <img src="19.color.jpg" alt="Palestinians meeting Amin al-Husseini">
+    <div class="caption"> Palestinian leaders meeting with Amin al-Husseini, the Grand Mufti of Jerusalem, discussing political strategies and responses to British rule and regional challenges prior to 1948. </div>
+  </div>
+  <div class="photo">
+    <img src="20.color.jpg" alt="Expulsion of Palestinians, 1948">
+    <div class="caption"> Over 750,000 Palestinians were forcibly expelled from their homes in 1948 during the Nakba, representing a pivotal moment of displacement and upheaval in Palestinian history.(AFP)</div>
+  </div>
+</div>
+
+<!-- Closing Page -->
+<div class="closing">
+  <h2>Closing</h2>
+  <p>Thank you for exploring this Premium collection. These images are more than historical records — they are vivid windows into personal and collective worlds. <br>If this edition helped you see Palestine more clearly, please share your thoughts, suggest future volumes, and follow Days Gone By for more rare archives and forgotten moments.</p>
+  <p>Support our work by leaving a review or sharing with those who value history. Future editions will bring additional regions, themes, and colorized collections.</p>
+  <p>— Days Gone By Archives</p>
+</div>
+
+<!-- Back Matter -->
+<div class="back-matter">
+  <h3>Sources & Notes</h3>
+  <p>All images are sourced from historical archives including Library of Congress, National Geographic, AFP, and private collections. Proper credits are listed under each photograph. This collection is intended for educational and historical purposes.</p>
+  <p>Usage Online: You may share excerpts or images for educational purposes, but please credit the source and this collection.</p>
+</div>
 
 </body>
 </html>
